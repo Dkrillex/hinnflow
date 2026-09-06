@@ -83,8 +83,8 @@ const zh = {
     titleA: "为什么选择",
     titleSerif: "希流",
     desc: "我们相信：智能不应被囤积，而应如水般流向每一处需要它的地方。",
-    quoteA: "上善若水。水善利万物而不争。",
-    quoteB: "最好的 AI 亦当如是 —— 藏于无形，服务于有形，让每一个 Token 都流向创造。",
+    quoteA: "溪流虽小，却始终知道海的方向。",
+    quoteB: "希流亦如此 —— 每一个 Token 都是一滴水，正流向创造，终成洋流。",
     quoteBy: "— 希流创始团队",
     items: [
       { title: "研究即底座", desc: "以大模型研究驱动产品，底层模型与推理能力自研可控，不建空中楼阁。" },
@@ -97,10 +97,16 @@ const zh = {
     eyebrow: "About Us",
     titleA: "希流 Hinnflow，",
     titleSerif: "让智能如洋流流动",
-    text1: "「希」是希望，「流」是奔流不息。希流 Hinnflow 创立于 2025 年，是一家专注 AI 智能产品的科技公司：以大模型研究为底座，以 AI Token 为最小智能单元，以 AIGC 平台为产品载体。",
+    text1: "「希流」，谐音「溪流」——溪流虽小，却知道海的方向。希流 Hinnflow 创立于 2025 年，是一家专注 AI 智能产品的科技公司：以大模型研究为底座，以 AI Token 为最小智能单元，以 AIGC 平台为产品载体。",
     text2Pre: "我们相信智能不应沉睡在机房之中，而应如洋流般奔涌——跨山越海、生生不息，流向每一个创作者与企业。围绕同一个使命：",
     text2Strong: "让每一个 Token 都流向创造。",
     chips: ["使命 · 让每一个 Token 都流向创造", "路线 · 从 Token 到创造", "愿景 · 让智能如洋流流动"],
+    facts: [
+      { label: "创立年份", value: "2025 年" },
+      { label: "公司主体", value: "Hinnflow Limited" },
+      { label: "所在地", value: "广州 · 琶洲西区" },
+      { label: "业务方向", value: "大模型研究 × AI Token × AIGC" },
+    ],
   },
   contact: {
     eyebrow: "Contact",
@@ -129,8 +135,11 @@ const zh = {
   footer: {
     slogan: "让每一个 Token 都流向创造",
     sloganEn: "Let Every Token Flow to Creation",
-    copyright: "© 2026 Xflow Limited 希流. 保留所有权利。",
-    legal: "Xflow Limited · 广州市海珠区琶洲西区 元创·OPC社区",
+    copyright: "© 2026 Hinnflow Limited 希流. 保留所有权利。",
+    legal: "Hinnflow Limited · 广州市海珠区琶洲西区 元创·OPC社区",
+    // TODO: 备案号当前为占位数字，取得正式备案后替换
+    icp: "粤ICP备2026001234号-1",
+    police: "粤公网安备 44010502001234号",
   },
 };
 
@@ -206,8 +215,8 @@ const en = {
     titleA: "Why choose ",
     titleSerif: "Hinnflow",
     desc: "We believe intelligence should not be hoarded — it should flow, like water, to wherever it is needed.",
-    quoteA: "The highest good is like water; it benefits all things without contending.",
-    quoteB: "The best AI should be the same — invisible yet everywhere, quietly letting every token flow to creation.",
+    quoteA: "A stream may be small, but it always knows the way to the sea.",
+    quoteB: "So it is with Hinnflow — every token is a drop of water, flowing toward creation, destined to become an ocean current.",
     quoteBy: "— Hinnflow founding team",
     items: [
       { title: "Research as the base", desc: "Products driven by LLM research, with self-developed models and reasoning we fully control." },
@@ -220,13 +229,19 @@ const en = {
     eyebrow: "About Us",
     titleA: "Hinnflow, ",
     titleSerif: "flowing like ocean currents",
-    text1: "\"Xi\" stands for hope and \"Liu\" for ceaseless flow. Founded in 2025, Hinnflow is a technology company focused on AI products — with LLM research as the base, AI tokens as the smallest unit of intelligence, and the AIGC platform as the product vehicle.",
+    text1: "\"Hinnflow\" echoes \"stream\" — small as it is, a stream always knows the way to the sea. Founded in 2025, Hinnflow is a technology company focused on AI products — with LLM research as the base, AI tokens as the smallest unit of intelligence, and the AIGC platform as the product vehicle.",
     text2Pre: "We believe intelligence should not sleep in server rooms — it should surge like an ocean current, crossing mountains and seas, flowing to every creator and business. All around one mission: ",
     text2Strong: "let every token flow to creation.",
     chips: [
       "Mission · Let every token flow to creation",
       "Path · From Token to Creation",
       "Vision · Let intelligence flow like ocean currents",
+    ],
+    facts: [
+      { label: "Founded", value: "2025" },
+      { label: "Legal entity", value: "Hinnflow Limited" },
+      { label: "Location", value: "Pazhou West, Guangzhou" },
+      { label: "Focus", value: "LLM Research × AI Token × AIGC" },
     ],
   },
   contact: {
@@ -255,9 +270,11 @@ const en = {
   },
   footer: {
     slogan: "Let Every Token Flow to Creation",
-    sloganEn: "Xflow Limited",
-    copyright: "© 2026 Xflow Limited. All rights reserved.",
-    legal: "Xflow Limited · Yuanchuang OPC Community, Pazhou West, Guangzhou",
+    sloganEn: "Let Every Token Flow to Creation",
+    copyright: "© 2026 Hinnflow Limited. All rights reserved.",
+    legal: "Hinnflow Limited · Yuanchuang OPC Community, Pazhou West, Guangzhou",
+    icp: "粤ICP备2026001234号-1",
+    police: "粤公网安备 44010502001234号",
   },
 };
 
@@ -274,7 +291,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("zh");
 
   useEffect(() => {
-    const saved = window.localStorage.getItem("xflow-lang");
+    const saved = window.localStorage.getItem("hinnflow-lang");
     if (saved === "en" || saved === "zh") setLangState(saved);
   }, []);
 
@@ -284,7 +301,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
 
   const setLang = useCallback((l: Lang) => {
     setLangState(l);
-    window.localStorage.setItem("xflow-lang", l);
+    window.localStorage.setItem("hinnflow-lang", l);
   }, []);
 
   return (

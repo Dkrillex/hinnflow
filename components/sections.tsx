@@ -272,7 +272,15 @@ export function About() {
             {t.about.text2Pre}
             <strong>{t.about.text2Strong}</strong>
           </Reveal>
-          <Reveal delay={0.2} className="about-values">
+          <Reveal delay={0.2} className="about-facts">
+            {t.about.facts.map((fact) => (
+              <div key={fact.label} className="fact-card glass">
+                <div className="fact-label">{fact.label}</div>
+                <div className="fact-value">{fact.value}</div>
+              </div>
+            ))}
+          </Reveal>
+          <Reveal delay={0.3} className="about-values">
             {t.about.chips.map((c) => (
               <div key={c} className="value-chip glass">
                 {c}

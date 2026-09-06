@@ -54,6 +54,42 @@ export default function Footer() {
 
         <div className="footer-meta">
           <p>{t.footer.copyright}</p>
+          <div className="footer-beian">
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {t.footer.icp}
+            </a>
+            <a
+              href="https://beian.mps.gov.cn/#/query/webSearch?code=44010502001234"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 2.5 4.5 5.6v5.6c0 4.9 3.4 8.6 7.5 10.3 4.1-1.7 7.5-5.4 7.5-10.3V5.6L12 2.5Z"
+                  fill="currentColor"
+                  opacity=".28"
+                />
+                <path
+                  d="M12 2.5 4.5 5.6v5.6c0 4.9 3.4 8.6 7.5 10.3 4.1-1.7 7.5-5.4 7.5-10.3V5.6L12 2.5Z"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="m8.7 12 2.4 2.4 4.4-4.6"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              {t.footer.police}
+            </a>
+          </div>
           <p>{t.footer.legal}</p>
         </div>
       </div>

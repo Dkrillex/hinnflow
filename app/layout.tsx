@@ -20,8 +20,8 @@ const notoSerifSC = Noto_Serif_SC({
 export const metadata: Metadata = {
   title: "希流 Hinnflow — 让每一个 Token 都流向创造",
   description:
-    "希流 Hinnflow（Xflow Limited · 广州琶洲）：大模型研究 × AI Token × AIGC 平台。让每一个 Token 都流向创造，Let Every Token Flow to Creation。",
-  keywords: ["希流", "Hinnflow", "Xflow Limited", "大模型研究", "AI Token", "AIGC 平台", "hinnflow"],
+    "希流 Hinnflow（Hinnflow Limited · 广州琶洲）：大模型研究 × AI Token × AIGC 平台。让每一个 Token 都流向创造，Let Every Token Flow to Creation。",
+  keywords: ["希流", "Hinnflow", "Hinnflow Limited", "大模型研究", "AI Token", "AIGC 平台", "hinnflow"],
   openGraph: {
     title: "希流 Hinnflow — 让每一个 Token 都流向创造",
     description: "大模型研究 × AI Token × AIGC 平台 · From Token to Creation",

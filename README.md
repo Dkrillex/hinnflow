@@ -1,6 +1,6 @@
-# 希流 Xflow — 公司官网
+# 希流 Hinnflow — 公司官网
 
-依据《希流 Xflow · 品牌定稿方案 v2.0》搭建：**Xflow Limited**（中国香港注册），
+依据《希流 Hinnflow · 品牌定稿方案 v2.0》搭建：**Hinnflow Limited**（注册于广州琶洲元创·OPC社区），
 业务定位「大模型研究 × AI Token × AIGC 平台」，品牌主标语
 「让每一个 Token 都流向创造 · Let Every Token Flow to Creation」。
 
@@ -47,11 +47,11 @@ components/
 
 ## 待替换的占位内容
 
-业务文案已按品牌定稿（三大支柱 / 「流」的三重含义 / 让智能流淌）撰写，以下仍为占位，替换为真实信息即可：
+业务文案已按品牌定稿（三大支柱 / 价值链路 / 让每一个 Token 都流向创造）撰写。联系方式已更新为真实信息（business@hinnflow.com / 186 2044 2110 / 广州琶洲元创·OPC社区，见 `lib/i18n.tsx`）。
 
-- 数据指标：`components/sections.tsx` 中 `STATS`（Tokens 数量、场景数为示例值）
-- 联系方式：`components/sections.tsx` 中 `hello@xflow.ai`、`400-800-XXXX`、地址
-- 页脚公司信息：`components/footer.tsx`（Xflow Limited 注册地址待补充）
+仍为占位、待替换的内容：
+
+- 数据指标：`lib/i18n.tsx` 中 `STATS`（Tokens 数量、场景数为示例值）
 - 首屏与区块文案微调：`components/hero.tsx`、`components/sections.tsx`
 - 表单接入：`components/contact-form.tsx` 中 `onSubmit` 目前仅本地模拟，TODO 处替换为真实接口
 
