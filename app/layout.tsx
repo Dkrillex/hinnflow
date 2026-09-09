@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, Noto_Serif_SC } from "next/font/google";
+import { Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const instrumentSerif = Instrument_Serif({
@@ -7,13 +7,6 @@ const instrumentSerif = Instrument_Serif({
   weight: "400",
   style: ["normal", "italic"],
   variable: "--font-instrument-serif",
-  display: "swap",
-});
-
-const notoSerifSC = Noto_Serif_SC({
-  subsets: ["latin"],
-  weight: ["400", "600"],
-  variable: "--font-noto-serif-sc",
   display: "swap",
 });
 
@@ -34,7 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="zh-CN"
-      className={`${instrumentSerif.variable} ${notoSerifSC.variable} h-full antialiased`}
+      className={`${instrumentSerif.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

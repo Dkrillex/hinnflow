@@ -16,6 +16,7 @@
   --text-dim: rgba(255, 255, 255, 0.88);
   --text-faint: rgba(255, 255, 255, 0.72);
   --header-h: 72px;
+  --font-noto-serif-sc: "Songti SC", "STSong", "Noto Serif SC", "SimSun", serif;
 }
 
 @theme inline {
@@ -228,9 +229,10 @@ body.no-webgl .shader-fallback {
   color: #fff;
 }
 
-.brand-mark svg {
+.brand-mark img {
   width: 30px;
   height: auto;
+  display: block;
 }
 
 .brand-name {
@@ -1303,8 +1305,9 @@ body.no-webgl .shader-fallback {
 }
 
 .footer-beian svg {
-  width: 13px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 /* ---------- 进场动效 ---------- */

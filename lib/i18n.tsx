@@ -137,8 +137,7 @@ const zh = {
     sloganEn: "Let Every Token Flow to Creation",
     copyright: "© 2026 Hinnflow Limited 希流. 保留所有权利。",
     legal: "Hinnflow Limited · 广州市海珠区琶洲西区 元创·OPC社区",
-    // TODO: 备案号当前为占位数字，取得正式备案后替换
-    icp: "粤ICP备2026001234号-1",
+    icp: "粤ICP备2025359293号",
     police: "粤公网安备 44010502001234号",
   },
 };
@@ -273,7 +272,7 @@ const en = {
     sloganEn: "Let Every Token Flow to Creation",
     copyright: "© 2026 Hinnflow Limited. All rights reserved.",
     legal: "Hinnflow Limited · Yuanchuang OPC Community, Pazhou West, Guangzhou",
-    icp: "粤ICP备2026001234号-1",
+    icp: "粤ICP备2025359293号",
     police: "粤公网安备 44010502001234号",
   },
 };
