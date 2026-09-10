@@ -65,6 +65,13 @@ const PILLAR_ICONS = [
   </svg>,
 ];
 
+/* 各支柱对应的独立业务站点；无独立站点的回落到联系我们 */
+const PILLAR_LINKS: (string | null)[] = [
+  null, // 大模型研究：暂无独立站点
+  "https://token.hinnflow.com", // AI Token
+  "https://canvas.hinnflow.com", // AIGC 平台
+];
+
 export function Products() {
   const { t } = useLang();
   return (
@@ -97,7 +104,13 @@ export function Products() {
                   <li key={f}>{f}</li>
                 ))}
               </ul>
-              <a className="link-more" href="#contact">
+              <a
+                className="link-more"
+                href={PILLAR_LINKS[i] ?? "#contact"}
+                {...(PILLAR_LINKS[i]
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : {})}
+              >
                 {t.pillars.more}
                 {p.name} <span aria-hidden="true">→</span>
               </a>
